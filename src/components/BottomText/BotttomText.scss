@@ -1,0 +1,190 @@
+.bottom_text{
+    @font-face {
+        font-family: neon;
+        src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/neon.ttf);
+      }
+      
+      .container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        max-height: 10vh;
+        // margin-top: 45vh;
+        position: absolute;
+        top: 48vh;
+        left: 0;
+        width: 40%;
+        left: 30%;
+        align-items: center;
+      }
+
+
+
+    //   NEON
+      
+      .neon {
+        font-family: neon;
+        color: #fb4264;
+        font-size: 9vw;
+        line-height: 9vw;
+        text-shadow: 0 0 3vw #f40a35;
+      }
+      
+      .flux {
+        font-family: neon;
+        color: #426dfb;
+        font-size: 9vw;
+        line-height: 9vw;
+        text-shadow: 0 0 3vw #2356ff;
+      }
+      
+      .neon {
+        animation: neon 1s ease infinite;
+        -moz-animation: neon 1s ease infinite;
+        -webkit-animation: neon 1s ease infinite;
+      }
+      
+      @keyframes neon {
+        0%,
+        100% {
+          text-shadow: 0 0 1vw #fa1c16, 0 0 3vw #fa1c16, 0 0 10vw #fa1c16,
+            0 0 10vw #fa1c16, 0 0 0.4vw #fed128, 0.5vw 0.5vw 0.1vw #806914;
+          color: #fed128;
+        }
+        50% {
+          text-shadow: 0 0 0.5vw #800e0b, 0 0 1.5vw #800e0b, 0 0 5vw #800e0b,
+            0 0 5vw #800e0b, 0 0 0.2vw #800e0b, 0.5vw 0.5vw 0.1vw #40340a;
+          color: #806914;
+        }
+      }
+      
+      .flux {
+        animation: flux 2s linear infinite;
+        -moz-animation: flux 2s linear infinite;
+        -webkit-animation: flux 2s linear infinite;
+        -o-animation: flux 2s linear infinite;
+      }
+      
+      @keyframes flux {
+        0%,
+        100% {
+          text-shadow: 0 0 1vw #1041ff, 0 0 3vw #1041ff, 0 0 10vw #1041ff,
+            0 0 10vw #1041ff, 0 0 0.4vw #8bfdfe, 0.5vw 0.5vw 0.1vw #147280;
+          color: #28d7fe;
+        }
+        50% {
+          text-shadow: 0 0 0.5vw #082180, 0 0 1.5vw #082180, 0 0 5vw #082180,
+            0 0 5vw #082180, 0 0 0.2vw #082180, 0.5vw 0.5vw 0.1vw #0a3940;
+          color: #146c80;
+        }
+      }
+
+
+    //   ANimate
+ 
+      @keyframes animate_r {
+        0% {
+          content: "Get";
+          color: white;
+          text-shadow: 0 0 3px white;
+        }
+        20% {
+          content: "ready";
+          text-shadow: 0 0 3px #FF4040 ;
+          color: 	#FF4040;
+        }
+        40% {
+          content: "for";
+          color: #008080;
+          text-shadow: 0 0 3px #008080 ;
+          
+        }
+        60% {
+          content: "Pleadis";
+          color: gold;
+          text-shadow: 0 0 3px gold ;
+          
+        }
+        80% {
+          content: "2k22";
+          color: #FF40FF;
+          text-shadow: 0 0 3px #FF40FF ;
+          
+        }
+      }
+      
+    //   body {
+    //     background: black;
+    //     height: 100vh;
+    //     display: flex;
+    //     justify-content: center;
+    //     align-items: center;
+    //   }
+      
+      h1::before {
+        font-family: 'Anton', sans-serif;
+        color: white;
+        content: "THIS";
+        font-size: 64px;
+        text-align: center;
+        letter-spacing: 10px;
+        font-weight: 700;
+        text-transform: uppercase;
+        animation: animate_r 5s steps(1, end) infinite;
+      }
+
+
+    //   container Box
+
+    .container .box {
+        transform-style: preserve-3d;
+        animation: animate 25s linear infinite;
+      }
+      
+      @keyframes animate {
+        0% {
+          transform: perspective(1000px) rotateX(0deg) rotate(25deg);
+        }
+        100% {
+          transform: perspective(1000px) rotateX(360deg) rotate(25deg);
+        }
+      }
+      
+      .container .box span {
+        position: absolute;
+        color: #fff;
+        font-size: 3.5em;
+        white-space: nowrap;
+        text-transform: uppercase;
+        font-weight: 700;
+        padding: 0 10px;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(0, 0, 0, 0.5),
+          transparent
+        );
+        line-height: 0.76em;
+        transform-style: preserve-3d;
+        text-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+        transform: translate(-50%, -50%) rotateX(calc(var(--i) * 22.5deg))
+          translateZ(106px);
+      }
+      
+      .container .box span i:nth-child(1) {
+        font-style: initial;
+        color: #E6FB04;
+        text-shadow: 0 0 6px #E6FB04;
+      }
+    
+      .container .box span i:nth-child(2) {
+        font-style: initial;
+        color: #FF00CC;
+        text-shadow: 0 0 7px #FF00CC;
+      }
+      
+      
+      
+
+}

@@ -1,0 +1,26 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  @media (min-width: 768px) {
+    top: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: transparent;
+    will-change: transform, opacity;
+    // transform: translateX(10%);
+    position: fixed;
+  }
+  
+
+
+}
+
+
+
+
+

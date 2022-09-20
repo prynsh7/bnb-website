@@ -1,0 +1,61 @@
+.header {
+  &__logoContainer {
+    text-align: center;
+    position: fixed;
+    #logo{
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      display: inline;
+      transition: margin-top 0.3s;
+
+      @media(max-width: 768px){
+        margin-top: 0px !important;
+      }
+
+    } 
+
+    #logo-img{
+      z-index: 10;width:23%;float:left;
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding-left: 2.9%;
+      padding-top: 1.7%;
+      display: inline;
+      transition: margin-top 0.3s;
+      
+      @media(max-width: 768px){
+        height: 4vh;
+        width: auto;
+        margin-top: 7px !important;
+      }
+
+    }
+
+    .navgrad {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+      img{
+        width: 31.25%;
+        float: left;
+
+        @media (max-width: 768px){
+          width: auto;
+          height: 7vh;
+        }
+      }
+  }
+
+    // @media (min-width: 1024px) {
+    //   width: 150px;
+    // }
+  }
+
+  &__logoImg {
+    // padding: 5px;
+    // max-height: 10vh;
+    // width: 100%;
+  }
+}
+
